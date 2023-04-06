@@ -14,7 +14,7 @@ func main() {
 	ebiten.SetWindowSize(game.ScreenWidth*2, game.ScreenHeight*2)
 	ebiten.SetWindowTitle("Clockwork Kingdom")
 
-	game := &game.Game{}
+	game := game.NewGame()
 	if err := ebiten.RunGame(game); err != nil && !game.IsRegularTermination(err) {
 		log.Err(err)
 	} else if game.IsRegularTermination(err) {

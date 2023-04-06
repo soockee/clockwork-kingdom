@@ -5,6 +5,6 @@ import (
 )
 
 var (
-	//go:embed images/characters/cog.png
+	//go:embed cog.png
 	Cog_32x32 []byte
 )
